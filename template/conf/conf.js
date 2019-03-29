@@ -1,0 +1,1 @@
+module.exports = require('hds-confs').init(__dirname + '/../');

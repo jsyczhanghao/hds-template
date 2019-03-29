@@ -1,0 +1,34 @@
+{
+  "name": "{{ name }}",
+  "version": "1.0.0",
+  "description": "{{ description }}",
+  "author": "{{ author }}",
+  "license": "{{ license }}",
+  "scripts": {
+    "server": "cross-env NODE_ENV=development webpack-dev-server --inline --progress --config conf/conf.js",
+    "dev": "npm run server",
+    "start": "npm run server",
+    "build": "cross-env NODE_ENV=production node conf/conf.js production",
+    "testing": "cross-env NODE_ENV=production node conf/conf.js testing",
+    "ef": "node_modules/eslint/bin/eslint.js --fix ./src"
+  },
+  "dependencies": {
+    "vue": "^2.6.10",
+    "vue-router": "^3.0.2",
+    "vuex": "^3.1.0"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "hds-confs": "github:jsyczhanghao/hds-confs",
+    "webpack-dev-server": "^2.11.5"
+  },
+  "engines": {
+    "node": ">= 6.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}
