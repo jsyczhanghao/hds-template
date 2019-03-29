@@ -4,11 +4,11 @@
   "description": "hds",
   "author": "js.zhang",
   "scripts": {
-    "server": "cross-env NODE_ENV=development webpack-dev-server --inline --progress --config conf/conf.js",
+    "server": "cross-env NODE_ENV=dev webpack-dev-server --inline --progress --config conf/conf.js",
     "dev": "npm run server",
     "start": "npm run server",
     "testing": "cross-env NODE_ENV=production node conf/conf.js testing",
-    "build": "cross-env NODE_ENV=production node conf/conf.js production",
+    "build": "cross-env NODE_ENV=production node conf/conf.js",
     "ef": "node_modules/eslint/bin/eslint.js --fix ./src"
   },
   "dependencies": {
